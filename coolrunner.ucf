@@ -1,18 +1,16 @@
 #-------------------------------------------------------------------------------
 # Brno University of Technology, Department of Radio Electronics
 #-------------------------------------------------------------------------------
-# Author(s): Tomas Fryza (tomas.fryza@vut.cz), Xilinx
-# Date: 2019-01-17 10:07:25
+# Author(s): Vojtech Barta 203188, Roman Vomela 203375
+# Date: 04/20/2019
 # Board: CoolRunner-II CPLD starter board
 # Description: Constraints file with pin assignments.
-#-------------------------------------------------------------------------------
-
 #-------------------------------------------------------------------------------
 # Buttons & switches
 #-------------------------------------------------------------------------------
 # Two push buttons
-NET btn_i<1>            LOC = P94;
-NET btn_i<0>            LOC = P143;
+NET BTN            LOC = P94;
+NET RST            LOC = P143;
 
 # Two slide switches
 #NET sw_i<1>             LOC = P124;
@@ -21,31 +19,31 @@ NET btn_i<0>            LOC = P143;
 #-------------------------------------------------------------------------------
 # Clock
 #-------------------------------------------------------------------------------
-#NET clk_i               LOC = P38;
+NET clk_i               LOC = P38;
 
 #-------------------------------------------------------------------------------
 # Four discrete LEDs
 #-------------------------------------------------------------------------------
-NET led_o<3>            LOC = P64;
-NET led_o<2>            LOC = P66;
-NET led_o<1>            LOC = P68;
-NET led_o<0>            LOC = P69;
+#NET led_o<3>            LOC = P64;
+#NET led_o<2>            LOC = P66;
+#NET led_o<1>            LOC = P68;
+#NET led_o<0>            LOC = P69;
 
 #-------------------------------------------------------------------------------
 # Four-digit time-multiplexed seven-segment LED display
 #-------------------------------------------------------------------------------
 # Digit enable
-#NET disp_digit_o<3>     LOC = P130;
-#NET disp_digit_o<2>     LOC = P129;
-#NET disp_digit_o<1>     LOC = P128;
-#NET disp_digit_o<0>     LOC = P126;
+NET disp_digit_o<3>     LOC = P130;
+NET disp_digit_o<2>     LOC = P129;
+NET disp_digit_o<1>     LOC = P128;
+NET disp_digit_o<0>     LOC = P126;
 
 # Seven-segment LED segments
-#NET disp_sseg_o<7>      LOC = P59;     # decimal point
-#NET disp_sseg_o<6>      LOC = P56;     # segment a
-#NET disp_sseg_o<5>      LOC = P53;     # segment b
-#NET disp_sseg_o<4>      LOC = P60;     # segment c
-#NET disp_sseg_o<3>      LOC = P58;     # segment d
-#NET disp_sseg_o<2>      LOC = P57;     # segment e
-#NET disp_sseg_o<1>      LOC = P54;     # segment f
-#NET disp_sseg_o<0>      LOC = P61;     # segment g
+NET disp_sseg_o<7>      LOC = P59;     # decimal point
+NET disp_sseg_o<6>      LOC = P56;     # segment a
+NET disp_sseg_o<5>      LOC = P53;     # segment b
+NET disp_sseg_o<4>      LOC = P60;     # segment c
+NET disp_sseg_o<3>      LOC = P58;     # segment d
+NET disp_sseg_o<2>      LOC = P57;     # segment e
+NET disp_sseg_o<1>      LOC = P54;     # segment f
+NET disp_sseg_o<0>      LOC = P61;     # segment g

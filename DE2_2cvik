@@ -20,8 +20,8 @@
 /* Define ------------------------------------------------------------*/
 #define LED_RED     PB0
 #define LED_GREEN   PB5
-#define BLINK_DELAY_1 500
-#define BLINK_DELAY_2 1000
+#define BLINK_DELAY 500
+
 
 /* Variables ---------------------------------------------------------*/
 /* Function prototypes -----------------------------------------------*/
